@@ -3,6 +3,25 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "verify": "node scripts/verify.mjs",
-    "check": "npm run build && npm run verify"
+    "check": "npm run build && npm run verify",
+    "test": "vitest run"
+  },
+  "name": "mf-translations",
+  "version": "1.0.0",
+  "description": "Static i18n translations backend for microfrontends.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristjanjansen/mf-translations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristjanjansen/mf-translations/issues"
+  },
+  "homepage": "https://github.com/kristjanjansen/mf-translations#readme",
+  "devDependencies": {
+    "vitest": "^4.1.2"
   }
 }
