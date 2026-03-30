@@ -1,6 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "verify": "node scripts/verify.mjs",
+    "check": "npm run build && npm run verify"
   }
 }
