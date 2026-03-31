@@ -4,9 +4,16 @@ on:
   push:
     tags: ["v*"]
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   release:
     uses: kristjanjansen/mfe-infra/.github/workflows/release-preview.yml@main
+    permissions:
+      contents: read
+      packages: write
     with:
       service_name: mfe-translations
       port: "4000"
