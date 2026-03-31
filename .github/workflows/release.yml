@@ -7,13 +7,11 @@ on:
 permissions:
   contents: read
   packages: write
+  pull-requests: read
 
 jobs:
   release:
     uses: kristjanjansen/mfe-infra/.github/workflows/release-preview.yml@main
-    permissions:
-      contents: read
-      packages: write
     with:
       service_name: mfe-translations
       port: "4000"
