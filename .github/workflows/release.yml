@@ -1,0 +1,15 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  release:
+    uses: kristjanjansen/mfe-infra/.github/workflows/release-preview.yml@main
+    with:
+      service_name: mfe-translations
+      port: "4000"
+      version: ${{ github.ref_name }}
+    secrets:
+      infra_token: ${{ secrets.INFRA_TOKEN }}
