@@ -6,9 +6,9 @@ on:
 
 jobs:
   preview:
-    uses: kristjanjansen/mf-infra/.github/workflows/pr-preview.yml@main
+    uses: kristjanjansen/mfe-infra/.github/workflows/pr-preview.yml@main
     with:
-      service_name: mf-translations
+      service_name: mfe-translations
       port: 4000
     secrets:
       infra_token: ${{ secrets.INFRA_TOKEN }}
