@@ -1,5 +1,5 @@
-# Build stage
 FROM node:22-alpine AS build
+LABEL org.opencontainers.image.source=https://github.com/kristjanjansen/mfe-translations
 
 WORKDIR /app
 
